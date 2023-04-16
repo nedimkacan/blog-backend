@@ -21,7 +21,7 @@ public class Comment {
     @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.REMOVE)
     @JoinColumn(name = "user_id",nullable = false)
     @JsonIgnore
-    private User userId;
+    private User user;
     @Lob
     @Column(columnDefinition = "text",name = "text")
     private String text;
