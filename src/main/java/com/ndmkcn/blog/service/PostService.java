@@ -37,7 +37,7 @@ public class PostService {
         return this.postRepository.save(post);
     }
 
-    public Post updatePost(PostUpdateDTO postUpdateDTO,Long id) {
+    public Post updatePost(PostUpdateDTO postUpdateDTO, Long id) {
         Optional<Post> post=this.postRepository.findById(id);
         if (post.isPresent()){
             Post convertPost=PostMapper.toUpdateEntity(postUpdateDTO,post.get());

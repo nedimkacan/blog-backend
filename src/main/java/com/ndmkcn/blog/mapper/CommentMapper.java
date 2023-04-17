@@ -16,7 +16,7 @@ public class CommentMapper {
         return comment;
     }
 
-    public static Comment toUpdateEntity(CommentUpdateDTO commentUpdateDTO,Comment comment){
+    public static Comment toUpdateEntity(CommentUpdateDTO commentUpdateDTO, Comment comment){
         comment.setText(commentUpdateDTO.getText());
         return comment;
     }

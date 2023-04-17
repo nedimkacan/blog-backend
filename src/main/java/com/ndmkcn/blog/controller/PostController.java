@@ -5,8 +5,6 @@ import com.ndmkcn.blog.dto.PostUpdateDTO;
 import com.ndmkcn.blog.entity.Post;
 import com.ndmkcn.blog.service.PostService;
 import lombok.AllArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

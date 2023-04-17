@@ -26,7 +26,7 @@ public class PostMapper {
     }
     */
 
-    public static Post toUpdateEntity(PostUpdateDTO postUpdateDTO,Post post){
+    public static Post toUpdateEntity(PostUpdateDTO postUpdateDTO, Post post){
         post.setTitle(postUpdateDTO.getTitle());
         post.setText(postUpdateDTO.getText());
         return post;

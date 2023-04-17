@@ -7,7 +7,6 @@ import com.ndmkcn.blog.entity.Post;
 import com.ndmkcn.blog.entity.User;
 import com.ndmkcn.blog.mapper.CommentMapper;
 import com.ndmkcn.blog.repository.CommentRepository;
-import com.ndmkcn.blog.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
