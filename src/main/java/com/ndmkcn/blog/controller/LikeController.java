@@ -18,14 +18,17 @@ public class LikeController {
     public List<Like> getAllLikes(@RequestParam Optional<Long> userId, @RequestParam Optional<Long> postId){
         return this.likeService.getAllLikes(userId,postId);
     }
+
     @GetMapping("/{id}")
     public Like getLikeById(@PathVariable Long id){
         return this.likeService.getLikeById(id);
     }
+
     @PostMapping
     public Like saveLike(@RequestBody LikeCreateDTO likeCreateDTO){
         return this.likeService.saveLike(likeCreateDTO);
     }
+
     @DeleteMapping("/{id}")
     public void deleteLike(@PathVariable Long id){
         this.likeService.deleteLike(id);
